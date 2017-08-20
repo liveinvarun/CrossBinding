@@ -36,6 +36,7 @@ namespace SampleApp
         private static readonly NSString RegistrationCell = new NSString("RegistrationCell");
         private UITableView _tableView = null;
         private RegistartionViewModel _viewmodel;
+
         public RegistrationTableSource(RegistartionViewModel viewmodel, UITableView tableView)
                             : base(tableView)
         {
@@ -62,16 +63,9 @@ namespace SampleApp
                 var registrationCell = _tableView.DequeueReusableCell(RegistrationCell, indexPath) as RegistrationCell;
                 if (registrationCell != null)
                 {
-                    //UserViewModel userviewmodel = modelList.FirstOrDefault();
-                    // loginCell.Bind<UserViewModel>(userviewmodel, "Email UserName");
-                    // loginCell.DataContext = modelList.FirstOrDefault().LoggedInUser;
-                    // loginCell as IMvxDisposeSource
                     var bindable = registrationCell as IMvxDataConsumer;
-
                     bindable.DataContext = _viewmodel;
 
-
-                    registrationCell.UpdateCell(_viewmodel);
                 }
 
                 return registrationCell;

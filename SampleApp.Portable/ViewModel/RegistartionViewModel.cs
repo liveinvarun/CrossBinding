@@ -37,7 +37,7 @@ namespace SampleApp.Portable
         {
             get
             {
-                return true;
+                return _isEnabled;
             }
             set
             {

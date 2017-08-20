@@ -17,36 +17,15 @@ namespace SampleApp
         RegistartionViewModel _viewModel;
         public RegistrationCell(IntPtr handle) : base(handle)
         {
-
-        }
-
-        internal void UpdateCell(RegistartionViewModel viewModel)
-        {
-            _viewModel = viewModel;
-            this.DataContext = _viewModel;
             this.DelayBind(() =>
-
-            {
-                //var set = this.CreateBindingSet<RegistrationCell, RegistartionViewModel>();
-                //set.Bind().To(o => o.Username).For(c => c.UserNameField);
-                //set.Bind(NextBtn.Tap()).For(o => o.Command).To(i => i.Login);
-                //// set.Bind(NextBtn.BindTouchUpInside()).To(i => i.Login);
-                //// set.Bind(NextBtn).To(i => i.Login);
-                //set.Apply();
-
-
-                var setq = this.CreateBindingSet<RegistrationCell, RegistartionViewModel>();
-                setq.Bind(NextBtn).For("TouchUpInside").To(vm => vm.Login);
-                // setq.Bind(NextBtn).To(o => o.Login).Mode(MvvmCross.Binding.MvxBindingMode.TwoWay);
-                //  setq.Bind(NextBtn).To(o => o.Login);
-                setq.Bind().To(o => o.IsEnabled).For(p => p.IsEnabled).Mode(MvvmCross.Binding.MvxBindingMode.TwoWay);
-                //setq.Bind(NextBtn.Tap()).For(o => o.Command).To(i => i.Login);
-                setq.Apply();
-            });
+                           {
+                               var setq = this.CreateBindingSet<RegistrationCell, RegistartionViewModel>();
+                               setq.Bind(NextBtn).For("TouchUpInside").To(vm => vm.Login);
+                               setq.Bind().To(o => o.IsEnabled).For(p => p.IsEnabled).Mode(MvvmCross.Binding.MvxBindingMode.TwoWay);
+                               setq.Apply();
+                           });
 
         }
-
-
 
         public bool IsEnabled
         {
