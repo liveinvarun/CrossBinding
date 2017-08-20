@@ -1,27 +1,12 @@
 ﻿<Properties StartupConfiguration="{47D651E0-0CB1-43F7-95EC-199132D77A19}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SampleApp.Portable/ViewModel/RegistartionViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleApp/RegistrationViewController.cs">
     <Files>
-      <File FileName="SampleApp/RegistrationCell.cs" Line="42" Column="80" />
+      <File FileName="SampleApp/RegistrationCell.cs" Line="22" Column="51" />
       <File FileName="SampleApp/Main.cs" Line="34" Column="40" />
       <File FileName="SampleApp/RegistrationViewController.cs" Line="30" Column="72" />
       <File FileName="SampleApp.Portable/ViewModel/RegistartionViewModel.cs" Line="72" Column="1" />
+      <File FileName="SampleApp/RegistrationTableSource.cs" Line="63" Column="70" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="SampleApp" expanded="True">
-            <Node name="SampleApp" expanded="True">
-              <Node name="en.lproj" expanded="True" />
-            </Node>
-            <Node name="SampleApp.Portable" expanded="True">
-              <Node name="ViewModel" expanded="True">
-                <Node name="RegistartionViewModel.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
